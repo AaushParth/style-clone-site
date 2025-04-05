@@ -33,12 +33,13 @@ const Navbar = () => {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center space-x-8">
-          <NavLink href="#features">Features</NavLink>
-          <NavLink href="#benefits">Benefits</NavLink>
-          <NavLink href="#about">About</NavLink>
-          <NavLink href="#testimonials">Testimonials</NavLink>
-          <Button className="bg-brand-purple hover:bg-brand-pink text-white rounded-full px-6">
-            Get Started
+          <NavLink href="#benefits">Benefícios</NavLink>
+          <NavLink href="#features">Módulos</NavLink>
+          <NavLink href="#testimonials">Depoimentos</NavLink>
+          <NavLink href="#faq">FAQ</NavLink>
+          <NavLink href="#about">Sobre</NavLink>
+          <Button className="bg-gradient-to-r from-brand-purple to-brand-pink hover:opacity-90 text-white rounded-full px-6">
+            Começar Agora
           </Button>
         </div>
 
@@ -65,12 +66,13 @@ const Navbar = () => {
       {mobileMenuOpen && (
         <div className="md:hidden bg-black/95 backdrop-blur-lg">
           <div className="container mx-auto px-4 py-4 flex flex-col space-y-4">
-            <NavLink href="#features" onClick={() => setMobileMenuOpen(false)}>Features</NavLink>
-            <NavLink href="#benefits" onClick={() => setMobileMenuOpen(false)}>Benefits</NavLink>
-            <NavLink href="#about" onClick={() => setMobileMenuOpen(false)}>About</NavLink>
-            <NavLink href="#testimonials" onClick={() => setMobileMenuOpen(false)}>Testimonials</NavLink>
+            <NavLink href="#benefits" onClick={() => setMobileMenuOpen(false)}>Benefícios</NavLink>
+            <NavLink href="#features" onClick={() => setMobileMenuOpen(false)}>Módulos</NavLink>
+            <NavLink href="#testimonials" onClick={() => setMobileMenuOpen(false)}>Depoimentos</NavLink>
+            <NavLink href="#faq" onClick={() => setMobileMenuOpen(false)}>FAQ</NavLink>
+            <NavLink href="#about" onClick={() => setMobileMenuOpen(false)}>Sobre</NavLink>
             <Button className="bg-gradient-to-r from-brand-purple to-brand-pink text-white w-full rounded-full">
-              Get Started
+              Começar Agora
             </Button>
           </div>
         </div>

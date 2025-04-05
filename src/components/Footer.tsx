@@ -3,34 +3,40 @@ import { Separator } from "@/components/ui/separator";
 
 const Footer = () => {
   return (
-    <footer className="py-10 bg-black/50 backdrop-blur-md">
+    <footer className="py-16 bg-black/50 backdrop-blur-md">
       <div className="container mx-auto px-4">
-        <div className="flex flex-col md:flex-row justify-between items-center mb-8">
-          <div className="mb-6 md:mb-0">
+        <div className="flex flex-col md:flex-row justify-between items-center mb-12">
+          <div className="mb-8 md:mb-0 text-center md:text-left">
             <span className="text-2xl font-bold text-gradient">InstaDom</span>
             <p className="text-gray-400 text-sm mt-2 max-w-xs">
-              Aprenda estratégias comprovadas para dominar o Instagram e impulsionar seu negócio.
+              Transforme sua presença no Instagram e impulsione seus resultados com estratégias comprovadas.
             </p>
           </div>
           
-          <div className="flex flex-col md:flex-row gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-10 md:gap-16">
             <div>
-              <h4 className="text-white font-semibold mb-3">Links Rápidos</h4>
+              <h4 className="text-white font-semibold mb-4">Navegação</h4>
               <ul className="space-y-2">
                 <li>
-                  <a href="#features" className="text-gray-400 hover:text-white text-sm">Features</a>
+                  <a href="#benefits" className="text-gray-400 hover:text-white text-sm">Benefícios</a>
                 </li>
                 <li>
-                  <a href="#about" className="text-gray-400 hover:text-white text-sm">Sobre Nós</a>
+                  <a href="#features" className="text-gray-400 hover:text-white text-sm">Módulos</a>
                 </li>
                 <li>
                   <a href="#testimonials" className="text-gray-400 hover:text-white text-sm">Depoimentos</a>
+                </li>
+                <li>
+                  <a href="#faq" className="text-gray-400 hover:text-white text-sm">FAQ</a>
+                </li>
+                <li>
+                  <a href="#about" className="text-gray-400 hover:text-white text-sm">Sobre</a>
                 </li>
               </ul>
             </div>
             
             <div>
-              <h4 className="text-white font-semibold mb-3">Legal</h4>
+              <h4 className="text-white font-semibold mb-4">Legal</h4>
               <ul className="space-y-2">
                 <li>
                   <a href="#" className="text-gray-400 hover:text-white text-sm">Política de Privacidade</a>
@@ -45,7 +51,7 @@ const Footer = () => {
             </div>
             
             <div>
-              <h4 className="text-white font-semibold mb-3">Contato</h4>
+              <h4 className="text-white font-semibold mb-4">Contato</h4>
               <ul className="space-y-2">
                 <li>
                   <a href="mailto:contato@instadom.com" className="text-gray-400 hover:text-white text-sm">contato@instadom.com</a>
@@ -58,13 +64,13 @@ const Footer = () => {
           </div>
         </div>
         
-        <Separator className="bg-gray-800 my-6" />
+        <Separator className="bg-gray-800 my-8" />
         
         <div className="flex flex-col md:flex-row justify-between items-center">
-          <p className="text-gray-500 text-sm">
+          <p className="text-gray-500 text-sm mb-4 md:mb-0">
             © {new Date().getFullYear()} InstaDom. Todos os direitos reservados.
           </p>
-          <div className="flex space-x-4 mt-4 md:mt-0">
+          <div className="flex space-x-6">
             <a href="#" className="text-gray-400 hover:text-white">
               <span className="sr-only">Instagram</span>
               <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">

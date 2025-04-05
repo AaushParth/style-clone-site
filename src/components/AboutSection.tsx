@@ -1,14 +1,22 @@
 
 import { Button } from "@/components/ui/button";
+import { CheckCircle } from "lucide-react";
+
+const features = [
+  "Estratégias exclusivas de crescimento",
+  "Técnicas avançadas de engajamento",
+  "Métodos comprovados de conversão",
+  "Suporte personalizado de especialistas"
+];
 
 const AboutSection = () => {
   return (
-    <section id="about" className="py-20 relative overflow-hidden">
+    <section id="about" className="py-24 relative overflow-hidden">
       {/* Background elements */}
       <div className="absolute -bottom-40 right-20 w-96 h-96 bg-brand-purple opacity-10 rounded-full filter blur-3xl"></div>
       
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="relative">
             <div className="absolute -inset-4 bg-gradient-to-r from-brand-purple to-brand-pink opacity-20 rounded-3xl filter blur-xl"></div>
             <div className="relative z-10 rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
@@ -47,18 +55,22 @@ const AboutSection = () => {
           </div>
           
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Quem te ensinará</h2>
-            <p className="text-gray-300 mb-4">
-              Isabella Ferreira é especialista em marketing digital há mais de 5 anos. Teve a oportunidade de colaborar com grandes marcas e ajudar pequenas empresas a alcançarem grandes resultados na plataforma. Sua jornada a transformou em uma consultora que cria perfis de alto impacto, que quando bem trabalhados a longo prazo podem trazer engajamento significativo e crescimento no número de seguidores e nas vendas.
-            </p>
-            <p className="text-gray-300 mb-4">
-              Seus conhecimentos, aliados a uma abordagem prática e estratégica, permitem que você obtenha os resultados que sempre buscou: crescimento significativo em engajamento, no número de seguidores e nas vendas.
-            </p>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">A especialista por trás do método</h2>
             <p className="text-gray-300 mb-6">
-              No InstaDomination, ela compartilha todas essas estratégias comprovadas para impulsionar qualquer tipo de negócio ou marca pessoal e explorar ao máximo as ferramentas e conhecimentos valiosos de alguém que já trilhou na frente do crescimento e sucesso no Instagram.
+              Isabella Ferreira é especialista em marketing digital há mais de 5 anos, com foco especial no Instagram. Já ajudou mais de 2.000 empresas e empreendedores a aumentarem significativamente sua presença digital e, consequentemente, suas vendas.
             </p>
+            
+            <div className="space-y-4 mb-8">
+              {features.map((feature, index) => (
+                <div key={index} className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 text-brand-pink flex-shrink-0 mt-0.5" />
+                  <span className="text-gray-300">{feature}</span>
+                </div>
+              ))}
+            </div>
+            
             <Button className="bg-gradient-to-r from-brand-purple to-brand-pink hover:opacity-90 text-white rounded-full px-8 py-6 text-lg font-bold">
-              QUERO DOMINAR O INSTAGRAM AGORA!
+              QUERO APRENDER AGORA!
             </Button>
           </div>
         </div>
