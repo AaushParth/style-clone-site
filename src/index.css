@@ -1,17 +1,19 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   :root {
-    --background: 240 10% 3.9%;
+    --background: 223 33% 7%;
     --foreground: 0 0% 98%;
 
-    --card: 240 10% 3.9%;
+    --card: 223 33% 7%;
     --card-foreground: 0 0% 98%;
 
-    --popover: 240 10% 3.9%;
+    --popover: 223 33% 7%;
     --popover-foreground: 0 0% 98%;
 
     --primary: 0 0% 98%;
@@ -32,7 +34,7 @@
     --border: 240 3.7% 15.9%;
     --input: 240 3.7% 15.9%;
     --ring: 240 4.9% 83.9%;
-    --radius: 0.75rem;
+    --radius: 0.5rem;
   }
 }
 
@@ -42,8 +44,12 @@
   }
   
   body {
-    @apply bg-background text-foreground antialiased;
+    @apply bg-brand-dark text-foreground antialiased font-sans;
     font-feature-settings: "ss01", "ss02", "cv01", "cv02", "cv03";
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display font-semibold;
   }
 
   html {
@@ -79,11 +85,23 @@
   }
 
   .animated-gradient-text {
-    background: linear-gradient(to right, #9b30ff, #ff7e00, #ff5e81, #9b30ff);
+    background: linear-gradient(to right, #644DF2, #4DADF2, #43B7A5, #644DF2);
     background-size: 300% 100%;
     animation: gradient-flow 5s ease infinite;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+}
+
+@keyframes gradient-flow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }

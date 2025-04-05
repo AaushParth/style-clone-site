@@ -4,12 +4,12 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const securityFeatures = [
   {
-    icon: <Shield className="w-12 h-12 text-brand-pink" />,
+    icon: <Shield className="w-12 h-12 text-brand-blue" />,
     title: "Multi-Signature Security",
     description: "Require multiple signatures to authorize transactions, preventing single points of failure and enhancing protection against unauthorized access."
   },
   {
-    icon: <Lock className="w-12 h-12 text-brand-orange" />,
+    icon: <Lock className="w-12 h-12 text-brand-teal" />,
     title: "Advanced Encryption",
     description: "All data is protected with military-grade encryption to ensure your assets remain secure at all times."
   },
@@ -37,7 +37,7 @@ const SecuritySection = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {securityFeatures.map((feature, index) => (
-            <Card key={index} className="glass-card overflow-hidden rotate-card border border-white/10 bg-black/30">
+            <Card key={index} className="glass-card overflow-hidden rotate-card border border-white/10 bg-brand-dark/30">
               <CardContent className="p-8 flex flex-col items-center text-center">
                 <div className="mb-6">
                   {feature.icon}

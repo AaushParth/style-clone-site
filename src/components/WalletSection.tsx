@@ -19,7 +19,7 @@ const WalletSection = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="relative">
-            <div className="absolute -inset-4 bg-gradient-to-r from-brand-purple to-brand-pink opacity-20 rounded-3xl filter blur-xl"></div>
+            <div className="absolute -inset-4 bg-gradient-to-r from-brand-purple to-brand-blue opacity-20 rounded-3xl filter blur-xl"></div>
             <div className="relative z-10 rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
               <div className="relative">
                 {/* Mock wallet interface */}
@@ -29,7 +29,7 @@ const WalletSection = () => {
                   <div className="text-white text-xs">100%</div>
                 </div>
                 <img 
-                  src="/lovable-uploads/6a7144b5-af98-4344-beef-e3759653feef.png" 
+                  src="https://vultisig.com/images/wallet-demo.png" 
                   alt="Wallet Interface" 
                   className="w-full object-cover aspect-[4/5]"
                 />
@@ -47,8 +47,8 @@ const WalletSection = () => {
             </div>
             
             {/* Floating elements */}
-            <div className="absolute -top-10 -right-10 w-20 h-20 bg-gradient-to-r from-brand-orange to-brand-pink rounded-lg rotate-12 animate-float"></div>
-            <div className="absolute bottom-20 -left-10 w-16 h-16 bg-gradient-to-r from-brand-purple to-brand-orange rounded-lg -rotate-12 animate-float delay-200"></div>
+            <div className="absolute -top-10 -right-10 w-20 h-20 bg-gradient-to-r from-brand-blue to-brand-teal rounded-lg rotate-12 animate-float"></div>
+            <div className="absolute bottom-20 -left-10 w-16 h-16 bg-gradient-to-r from-brand-purple to-brand-blue rounded-lg -rotate-12 animate-float delay-200"></div>
           </div>
           
           <div>
@@ -60,13 +60,13 @@ const WalletSection = () => {
             <div className="space-y-4 mb-8">
               {features.map((feature, index) => (
                 <div key={index} className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-brand-pink flex-shrink-0 mt-0.5" />
+                  <CheckCircle className="w-5 h-5 text-brand-blue flex-shrink-0 mt-0.5" />
                   <span className="text-gray-300">{feature}</span>
                 </div>
               ))}
             </div>
             
-            <Button className="bg-gradient-to-r from-brand-purple to-brand-pink hover:opacity-90 text-white rounded-full px-8 py-6 text-lg font-bold">
+            <Button className="bg-gradient-to-r from-brand-purple to-brand-blue hover:opacity-90 text-white rounded-md px-8 py-6 text-lg font-bold">
               CREATE YOUR WALLET
             </Button>
           </div>

@@ -23,12 +23,12 @@ const Navbar = () => {
     <nav 
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
-        scrolled ? "bg-black/80 backdrop-blur-md py-3 shadow-md" : "bg-transparent py-5"
+        scrolled ? "bg-brand-dark/80 backdrop-blur-md py-3 shadow-md" : "bg-transparent py-5"
       )}
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
         <div className="flex items-center">
-          <span className="text-2xl font-bold text-gradient">VultiSig</span>
+          <img src="https://vultisig.com/images/logo.svg" alt="VultiSig" className="h-8" />
         </div>
 
         {/* Desktop Menu */}
@@ -37,7 +37,7 @@ const Navbar = () => {
           <NavLink href="#features">Features</NavLink>
           <NavLink href="#wallet">Wallet</NavLink>
           <NavLink href="#faq">FAQ</NavLink>
-          <Button className="bg-gradient-to-r from-brand-purple to-brand-pink hover:opacity-90 text-white rounded-full px-6">
+          <Button className="bg-gradient-to-r from-brand-purple to-brand-blue hover:opacity-90 text-white rounded-md px-6">
             Get Started
           </Button>
         </div>
@@ -63,13 +63,13 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {mobileMenuOpen && (
-        <div className="md:hidden bg-black/95 backdrop-blur-lg">
+        <div className="md:hidden bg-brand-dark/95 backdrop-blur-lg">
           <div className="container mx-auto px-4 py-4 flex flex-col space-y-4">
             <NavLink href="#security" onClick={() => setMobileMenuOpen(false)}>Security</NavLink>
             <NavLink href="#features" onClick={() => setMobileMenuOpen(false)}>Features</NavLink>
             <NavLink href="#wallet" onClick={() => setMobileMenuOpen(false)}>Wallet</NavLink>
             <NavLink href="#faq" onClick={() => setMobileMenuOpen(false)}>FAQ</NavLink>
-            <Button className="bg-gradient-to-r from-brand-purple to-brand-pink text-white w-full rounded-full">
+            <Button className="bg-gradient-to-r from-brand-purple to-brand-blue text-white w-full rounded-md">
               Get Started
             </Button>
           </div>

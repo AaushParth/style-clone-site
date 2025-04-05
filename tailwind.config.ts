@@ -64,9 +64,12 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				brand: {
-					purple: '#9b30ff',
-					orange: '#ff7e00',
-					pink: '#ff5e81'
+					// Updated brand colors according to the brand kit
+					purple: '#644DF2', // Primary brand color from brand kit
+					blue: '#4DADF2',   // Secondary brand color from brand kit
+					teal: '#43B7A5',   // Accent color
+					dark: '#0B0F19',   // Dark background
+					light: '#F2F4F8'   // Light background
 				}
 			},
 			borderRadius: {
@@ -116,10 +119,14 @@ export default {
 			},
 			backgroundImage: {
 				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-				'hero-gradient': 'linear-gradient(to right, #9b30ff, #ff7e00)',
-				'card-gradient': 'linear-gradient(45deg, #9b30ff, #ff5e81)',
-				'footer-gradient': 'linear-gradient(to right, #ff7e00, #ff5e81)',
-				'cta-gradient': 'linear-gradient(to right, #9b30ff, #ff5e81)'
+				'hero-gradient': 'linear-gradient(to right, #644DF2, #4DADF2)',
+				'card-gradient': 'linear-gradient(45deg, #644DF2, #4DADF2)',
+				'footer-gradient': 'linear-gradient(to right, #4DADF2, #43B7A5)',
+				'cta-gradient': 'linear-gradient(to right, #644DF2, #43B7A5)'
+			},
+			fontFamily: {
+				sans: ['Inter', 'sans-serif'], // Main font from the brand kit
+				display: ['Montserrat', 'sans-serif'] // Headers font from the brand kit
 			}
 		}
 	},
