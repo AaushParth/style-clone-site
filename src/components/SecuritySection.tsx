@@ -48,6 +48,15 @@ const SecuritySection = () => {
             </Card>
           ))}
         </div>
+        
+        {/* Security visual element from Vultisig */}
+        <div className="mt-20 flex justify-center">
+          <img 
+            src="https://vultisig.com/images/security-visual.png" 
+            alt="Security visualization" 
+            className="max-w-full rounded-xl shadow-lg border border-white/10"
+          />
+        </div>
       </div>
     </section>
   );
