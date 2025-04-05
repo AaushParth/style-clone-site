@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,11 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				brand: {
+					purple: '#9b30ff',
+					orange: '#ff7e00',
+					pink: '#ff5e81'
 				}
 			},
 			borderRadius: {
@@ -84,11 +90,36 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'gradient-flow': {
+					'0%, 100%': { 
+						backgroundPosition: '0% 50%' 
+					},
+					'50%': { 
+						backgroundPosition: '100% 50%' 
+					}
+				},
+				'float': {
+					'0%, 100%': { 
+						transform: 'translateY(0)' 
+					},
+					'50%': { 
+						transform: 'translateY(-10px)' 
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'gradient-flow': 'gradient-flow 5s ease infinite',
+				'float': 'float 6s ease-in-out infinite'
+			},
+			backgroundImage: {
+				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+				'hero-gradient': 'linear-gradient(to right, #9b30ff, #ff7e00)',
+				'card-gradient': 'linear-gradient(45deg, #9b30ff, #ff5e81)',
+				'footer-gradient': 'linear-gradient(to right, #ff7e00, #ff5e81)',
+				'cta-gradient': 'linear-gradient(to right, #9b30ff, #ff5e81)'
 			}
 		}
 	},
