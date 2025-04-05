@@ -28,18 +28,17 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
         <div className="flex items-center">
-          <span className="text-2xl font-bold text-gradient">InstaDom</span>
+          <span className="text-2xl font-bold text-gradient">VultiSig</span>
         </div>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center space-x-8">
-          <NavLink href="#benefits">Benefícios</NavLink>
-          <NavLink href="#features">Módulos</NavLink>
-          <NavLink href="#testimonials">Depoimentos</NavLink>
+          <NavLink href="#security">Security</NavLink>
+          <NavLink href="#features">Features</NavLink>
+          <NavLink href="#wallet">Wallet</NavLink>
           <NavLink href="#faq">FAQ</NavLink>
-          <NavLink href="#about">Sobre</NavLink>
           <Button className="bg-gradient-to-r from-brand-purple to-brand-pink hover:opacity-90 text-white rounded-full px-6">
-            Começar Agora
+            Get Started
           </Button>
         </div>
 
@@ -66,13 +65,12 @@ const Navbar = () => {
       {mobileMenuOpen && (
         <div className="md:hidden bg-black/95 backdrop-blur-lg">
           <div className="container mx-auto px-4 py-4 flex flex-col space-y-4">
-            <NavLink href="#benefits" onClick={() => setMobileMenuOpen(false)}>Benefícios</NavLink>
-            <NavLink href="#features" onClick={() => setMobileMenuOpen(false)}>Módulos</NavLink>
-            <NavLink href="#testimonials" onClick={() => setMobileMenuOpen(false)}>Depoimentos</NavLink>
+            <NavLink href="#security" onClick={() => setMobileMenuOpen(false)}>Security</NavLink>
+            <NavLink href="#features" onClick={() => setMobileMenuOpen(false)}>Features</NavLink>
+            <NavLink href="#wallet" onClick={() => setMobileMenuOpen(false)}>Wallet</NavLink>
             <NavLink href="#faq" onClick={() => setMobileMenuOpen(false)}>FAQ</NavLink>
-            <NavLink href="#about" onClick={() => setMobileMenuOpen(false)}>Sobre</NavLink>
             <Button className="bg-gradient-to-r from-brand-purple to-brand-pink text-white w-full rounded-full">
-              Começar Agora
+              Get Started
             </Button>
           </div>
         </div>

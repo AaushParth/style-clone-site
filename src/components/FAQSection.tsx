@@ -8,24 +8,24 @@ import {
 
 const faqs = [
   {
-    question: "Quanto tempo terei acesso ao curso?",
-    answer: "Você terá acesso vitalício ao conteúdo do curso, incluindo todas as atualizações futuras."
+    question: "What is a multi-signature wallet?",
+    answer: "A multi-signature wallet is a digital wallet that requires multiple private keys to authorize a transaction, rather than just one. This provides an additional layer of security as multiple parties must approve transactions."
   },
   {
-    question: "O curso é indicado para iniciantes?",
-    answer: "Sim, o curso foi estruturado para atender tanto iniciantes quanto usuários avançados do Instagram. Começamos com os fundamentos e progredimos para estratégias mais sofisticadas."
+    question: "How secure is VultiSig?",
+    answer: "VultiSig employs bank-grade security measures including multi-signature technology, advanced encryption, and secure key management. Our solution is built with security as the primary focus."
   },
   {
-    question: "Quanto tempo leva para ver resultados?",
-    answer: "Os alunos geralmente começam a ver resultados nas primeiras semanas após aplicar as estratégias ensinadas. No entanto, os resultados mais significativos acontecem após 2-3 meses de implementação consistente."
+    question: "What happens if I lose one of my devices?",
+    answer: "Our wallet includes secure recovery options. Depending on your setup, you can recover access using your remaining authorized devices or through a predetermined recovery process."
   },
   {
-    question: "Existe suporte para dúvidas?",
-    answer: "Sim, oferecemos suporte completo através de um grupo exclusivo onde você poderá tirar suas dúvidas diretamente com nossos especialistas."
+    question: "Can I customize signature requirements?",
+    answer: "Yes, you can set custom threshold requirements for transaction approvals. For example, you might require 2 out of 3, or 3 out of 5 signatures for different types of transactions."
   },
   {
-    question: "Existe garantia de resultados?",
-    answer: "Oferecemos garantia de satisfação de 30 dias. Se você não ficar satisfeito com o conteúdo, devolveremos 100% do seu investimento, sem perguntas."
+    question: "Is VultiSig compatible with hardware wallets?",
+    answer: "Yes, VultiSig is designed to work seamlessly with popular hardware wallets for enhanced security and key management."
   }
 ];
 
@@ -37,9 +37,9 @@ const FAQSection = () => {
       
       <div className="container mx-auto px-4">
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Perguntas Frequentes</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">Frequently Asked Questions</h2>
           <p className="text-gray-300 text-lg">
-            Tudo o que você precisa saber antes de se inscrever
+            Find answers to common questions about our multi-signature wallet
           </p>
         </div>
         

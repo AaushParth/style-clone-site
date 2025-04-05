@@ -2,11 +2,10 @@
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import FeaturesSection from "@/components/FeaturesSection";
-import BenefitsSection from "@/components/BenefitsSection";
-import TestimonialsSection from "@/components/TestimonialsSection";
+import SecuritySection from "@/components/SecuritySection";
+import WalletSection from "@/components/WalletSection";
 import FAQSection from "@/components/FAQSection";
 import CTASection from "@/components/CTASection";
-import AboutSection from "@/components/AboutSection";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -14,11 +13,10 @@ const Index = () => {
     <div className="min-h-screen bg-black text-white overflow-x-hidden">
       <Navbar />
       <HeroSection />
-      <BenefitsSection />
+      <SecuritySection />
       <FeaturesSection />
-      <TestimonialsSection />
+      <WalletSection />
       <FAQSection />
-      <AboutSection />
       <CTASection />
       <Footer />
     </div>

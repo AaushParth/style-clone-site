@@ -3,21 +3,21 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const features = [
   {
-    title: "MÓDULO 1",
-    heading: "Fundamentos do Instagram",
-    description: "Aprenda as bases de um perfil de sucesso: configuração correta, otimização de bio e estratégias iniciais para destacar seu perfil.",
+    title: "THRESHOLD SIGNATURES",
+    heading: "Custom Signature Requirements",
+    description: "Set custom threshold requirements for transaction approvals. Define how many signatures are needed from your trusted circle.",
     gradient: "from-brand-purple to-brand-pink"
   },
   {
-    title: "MÓDULO 2",
-    heading: "Conteúdo Estratégico",
-    description: "Crie um plano de conteúdo eficiente que engaja sua audiência e estabelece sua autoridade na plataforma.",
+    title: "TRANSACTION MANAGEMENT",
+    heading: "Complete Transaction History",
+    description: "Track all your transactions with a comprehensive history log and detailed audit trail for enhanced transparency.",
     gradient: "from-brand-orange to-brand-pink"
   },
   {
-    title: "MÓDULO 3",
-    heading: "Estratégias Avançadas",
-    description: "Aprenda técnicas avançadas para crescimento acelerado e conversão de seguidores em clientes fiéis.",
+    title: "SECURE RECOVERY",
+    heading: "Multiple Recovery Options",
+    description: "Implement secure recovery mechanisms to ensure you never lose access to your assets, even if a device is lost.",
     gradient: "from-brand-pink to-brand-purple"
   }
 ];
@@ -31,10 +31,10 @@ const FeaturesSection = () => {
       
       <div className="container mx-auto px-4">
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">O que você aprenderá</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">Advanced Features</h2>
           <p className="text-gray-300 text-lg">
-            Um programa completo dividido em módulos práticos e acionáveis para 
-            transformar sua presença no Instagram.
+            Our multi-signature wallet comes with powerful features designed to provide
+            maximum security while maintaining ease of use.
           </p>
         </div>
         

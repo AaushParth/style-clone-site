@@ -13,22 +13,22 @@ const HeroSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           <div className="text-center md:text-left">
             <Badge className="mb-4 bg-white/10 text-white hover:bg-white/20 backdrop-blur-sm px-3 py-1">
-              Domine o Instagram
+              Secure Multi-Signature Wallet
             </Badge>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-              <span className="animated-gradient-text">Domine o</span>{" "}
-              <span className="text-brand-orange">Instagram</span>{" "}
-              <span className="block mt-2">com estratégias avançadas</span>
+              <span className="animated-gradient-text">Multi-Signature</span>{" "}
+              <span className="text-brand-orange">Wallet</span>{" "}
+              <span className="block mt-2">for digital asset security</span>
             </h1>
             <p className="text-gray-300 text-lg md:text-xl mb-8 max-w-lg">
-              Aprenda as estratégias comprovadas para criar um perfil atraente, impulsionar o engajamento e transformar seguidores em clientes fiéis.
+              The most secure way to store and manage your digital assets with advanced multi-signature technology and robust security features.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
               <Button className="bg-gradient-to-r from-brand-purple to-brand-pink hover:opacity-90 text-white rounded-full px-8 py-6 text-lg">
-                INSCREVER-SE AGORA
+                GET STARTED
               </Button>
               <Button variant="outline" className="border-white/20 bg-white/5 hover:bg-white/10 text-white rounded-full px-8 py-6 text-lg">
-                Saiba mais
+                Learn More
               </Button>
             </div>
             
@@ -38,7 +38,7 @@ const HeroSection = () => {
                 <div className="w-8 h-8 rounded-full bg-gradient-to-r from-brand-orange to-brand-pink border-2 border-black"></div>
                 <div className="w-8 h-8 rounded-full bg-gradient-to-r from-brand-pink to-brand-purple border-2 border-black"></div>
               </div>
-              <span className="ml-4 text-sm text-gray-300">Mais de 10.000 pessoas já se inscreveram</span>
+              <span className="ml-4 text-sm text-gray-300">Trusted by thousands of users worldwide</span>
             </div>
           </div>
           
@@ -47,7 +47,7 @@ const HeroSection = () => {
               <div className="absolute inset-0 bg-gradient-to-r from-brand-purple to-brand-orange opacity-30 rounded-full filter blur-3xl animate-pulse"></div>
               <img 
                 src="/lovable-uploads/6a7144b5-af98-4344-beef-e3759653feef.png" 
-                alt="Instagram Domination" 
+                alt="Multi-Signature Wallet" 
                 className="relative z-10 rounded-2xl shadow-2xl w-full max-w-md border border-white/10"
               />
             </div>
